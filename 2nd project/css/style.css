@@ -1,0 +1,229 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Akaya Kanadaka', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Nvigation Bar  */
+#navbar{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+#navbar::before{
+   content: "";
+   background-color: black;
+   height: 80%;
+   width: 100%;
+   top: 0px;
+   left: 0px;
+   position: absolute;
+   z-index: -1;
+   opacity: 0.4;
+}
+
+
+#logo{
+    margin:34px;
+}
+
+#logo img{
+    margin: 3px 6px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 30px;
+    text-decoration: none;
+    color: blanchedalmond;
+    border-radius: 12px;
+    height: 30px;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 220px;
+    height: 600px;
+    justify-content: center;
+    text-align: center;
+}
+#home::before{
+    content: "";
+   background: url('../bg1.jpg') no-repeat center center/cover;
+   height: 700px;
+   width: 100%;
+   top: 0px;
+   left: 0px;
+   position: absolute;
+   z-index: -1;
+   opacity: 0.89;
+} 
+
+#home h1{
+   color: white;
+   font-size: 3.8rem;
+    color: #ffffff;
+  
+}
+#home p{
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* Services section */
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    padding: 34px;
+    margin: 2px 55px;
+    margin-bottom: 25px;
+    background: #f2f2f2;
+    border: 2px solid brown;
+    border-radius: 28px;
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+/* Clients */
+
+#client-section{
+    position:relative;
+    background: url('../bg2.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;    
+}
+
+
+#clients{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    z-index: -1;
+}
+.client-item{
+    padding: 60px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+
+
+/* Contact Section  */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url('../contactus.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 34px;
+}
+#contact-box input , #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 9px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.1rem;
+    float: left;
+
+}
+#name1, #name2, #name3{
+    border: 2px solid grey;
+}
+
+
+footer{
+    color: honeydew;
+    background-color: black;
+    padding: 9px 20px;
+}
+
+
+.btn{
+    padding: 6px 20px;
+    margin: 18px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.btn:hover{
+    background-color: rgba(162, 42, 42, 0.342);
+}
+.form-group .btn{
+    width: 100%;
+}
+
+.h-primary{
+    padding: 12px;
+    font-size: 3.8rem;
+}
+.h-secondary{
+    padding: 12px;
+    font-size: 2.3rem;
+}
+
+.center{
+    text-align: center;
+}
